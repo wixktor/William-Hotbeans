@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#temp {
+  margin-left: 0.6rem;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: auto auto 1fr 1fr 1fr auto auto;
+  grid-gap: 10px;
+  height: calc(100vh - 10px);
+}
