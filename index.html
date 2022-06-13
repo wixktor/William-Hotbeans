@@ -240,41 +240,5 @@
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.6.14/keen-slider.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="script.js"></script>
-    <script>
-      var animation = { duration: 25000, easing: (t) => t };
-
-      var slider = new KeenSlider("#my-keen-slider", {
-        loop: true,
-        renderMode: "performance",
-        drag: true,
-        breakpoints: {
-          "(min-width: 400px)": {
-            slides: {
-              perView: 1,
-              spacing: 222,
-            },
-          },
-          "(min-width: 1000px)": {
-            slides: {
-              perView: 2,
-              spacing: 222,
-            },
-          },
-        },
-        slides: {
-          perView: 1,
-          spacing: 222,
-        },
-        created(s) {
-          s.moveToIdx(5, true, animation);
-        },
-        updated(s) {
-          s.moveToIdx(s.track.details.abs + 5, true, animation);
-        },
-        animationEnded(s) {
-          s.moveToIdx(s.track.details.abs + 5, true, animation);
-        },
-      });
-    </script>
   </body>
 </html>
