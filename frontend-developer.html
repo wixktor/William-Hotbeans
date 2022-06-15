@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.6.14/keen-slider.min.css" />
+    <title>Hotbeans</title>
+</head>
+
+<body id="bg">
+    <nav
+        class="fixed bottom-0 left-1/2 z-10 translate-x-[-50%] mb-6 px-7 py-4 bg-blur sm:rounded-full rounded-lg nav-bar">
+        <div class="flex sm:flex-row flex-col lg:space-x-12 space-x-0 sm:space-x-6">
+            <a href="/index.html">Home</ac>
+                <a href="/contact.html">Contact</a>
+                <a href="/index.html">Careers</a>
+        </div>
+    </nav>
+    <header class="max-w-7xl mx-auto flex justify-between py-12 align-center flex-row lg:px-1 px-4">
+        <div class="flex">
+            <a href="/" class="text-3xl">Hotbeans</a>
+        </div>
+        <div class="nav-weather lg:flex hidden">
+            <h2 class="text-2xl">London,</h2>
+            <h2 id="temp" class="text-2xl"></h2>
+        </div>
+    </header>
+    <main class="xl:px-5 px-4">
+        <div class="max-w-7xl mx-auto pb-[11rem] pt-[5rem]">
+            <h2 class="text-5xl">Frontend Developer</h2>
+            <h3 class="text-xl mt-3 opacity-80">Come help build amazing projects at Hotbeans</h3>
+            <div class="mt-11 max-w-2xl">
+                <p class="text-xl">Hotbeans is a multinational creative agency focused on creating award
+                    winning websites for high profile clients.</p>
+                <div class="mt-12">
+                    <h3 class="text-xl">Responsibilities</h3>
+                    <ul class="ml-4 mt-2.5 space-y-3 list-disc">
+                        <li>Translate designs and wireframes into high-quality code</li>
+                        <li>Create extremely well-crafted front-end web applications using Sass, Grid CSS, JSS, etc</li>
+                        <li>Write resilient code that will be continuously tested deployed, and performed at scale</li>
+                        <li>Work closely with the UX/UI design team</li>
+                        <li>Agile methodology usage - sprints planning/ daily/review/retrospective meetings</li>
+                    </ul>
+                </div>
+                <div class="mt-12">
+                    <h3 class="text-xl">
+                        Requirements</h3>
+                    <ul class="ml-4 mt-2.5 space-y-3 list-disc">
+                        <li>Advanced Level of CSS & HTML</li>
+                        <li>Strong skills in cross-browser layouts</li>
+                        <li>A11y & SEO experience</li>
+                        <li>Browser API skills</li>
+                        <li>Hands-on experience with Figma, Storybook, Zeplin</li>
+                    </ul>
+                </div>
+                <div class="mt-12">
+                    <h3 class="text-xl">
+                        Nice to have</h3>
+                    <ul class="ml-4 mt-2.5 space-y-3 list-disc">
+                        <li>Some experience with frameworks or libraries (React/Angular/Vue basic skills)</li>
+                        <li>Some experience with build tools and task runners</li>
+                        <li>Willingness to upskill for JS/React developer</li>
+                        <li>Design System experience</li>
+                    </ul>
+                </div>
+                <div class="mt-12">
+                    <p class="text-xl">
+                        Hotbeans is an Equal Opportunity-Affirmative Action Employer – Minority / Female / Disability /
+                        Veteran / Gender Identity / Sexual Orientation / Age"</p>
+                </div>
+
+                <div class="mt-14">
+                    <h2 class="text-2xl">
+                        Your Application</h2>
+                        <div class="space-y-4 mt-6">
+                        <input type="text" placeholder="Name" class="w-full rounded border-b-2 border-[#888888] py-3 px-[14px] text-base text-[#ffffff] outline-none placeholder:text-[#c9c9c9] bg-transparent focus-visible:shadow-none">
+                        <input type="text" placeholder="Email" class="w-full rounded border-b-2 border-[#888888] py-3 px-[14px] text-base text-[#ffffff] outline-none placeholder:text-[#c9c9c9] bg-transparent focus-visible:shadow-none">
+                        <input type="text" placeholder="Phone" class="w-full rounded border-b-2 border-[#888888] py-3 px-[14px] text-base text-[#ffffff] outline-none placeholder:text-[#c9c9c9] bg-transparent focus-visible:shadow-none">
+                        <textarea placeholder="Your message" style="resize: none;" class="w-full h-44 rounded border-b-2 border-[#888888] py-3 px-[14px] text-base text-[#ffffff] outline-none placeholder:text-[#c9c9c9] bg-transparent focus-visible:shadow-none"></textarea>
+                        <h3>Your CV:</h3>
+                        <input type="file" id="formFile">
+                        <div class="pt-6">
+                        <button class="px-12 py-3 rounded-full bg-white text-black">Submit</button>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="max-w-7xl mx-auto">
+            <div
+                class="flex flex-col mb-5 items-center md:items-center md:justify-between lg:flex-row lg:justify-between">
+                <div>
+                    <a href="/" class="join text-3xl font-semibold" id="bg-title">Hotbeans</a>
+                </div>
+                <div class="flex space-x-12">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff"
+                            viewBox="0 0 24 24" id="bg-svg" class="join-svg">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg></a><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff"
+                            id="bg-svg2" viewBox="0 0 24 24" class="join-svg">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.6.14/keen-slider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

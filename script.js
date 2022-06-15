@@ -64,42 +64,33 @@ var slider = new KeenSlider("#my-keen-slider", {
   },
 });
 
-// change background colour
+window.onscroll = function () {
+  scrollFunction();
+};
 
-$(document).ready(function () {
-  var scroll_pos = 0;
-  $(document).scroll(function () {
-    scroll_pos = $(this).scrollTop();
-    if (scroll_pos > 3800) {
-      $("body").css("background-color", "white");
-      $(".join").css("color", "#1a1a1a");
-      $(".join-svg").css("fill", "#1a1a1a");
-    } else {
-      $("body").css("background-color", "#1a1a1a");
-      $(".join").css("color", "white");
-      $(".join-svg").css("fill", "white");
-    }
-  });
-});
-
-// change background colour on mobile
-
-$(window).resize(function () {
-  if ($(window).width() < 500) {
-    $(document).ready(function () {
-      var scroll_pos = 0;
-      $(document).scroll(function () {
-        scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 4300) {
-          $("body").css("background-color", "white");
-          $(".join").css("color", "#1a1a1a");
-          $(".join-svg").css("fill", "#1a1a1a");
-        } else {
-          $("body").css("background-color", "#1a1a1a");
-          $(".join").css("color", "white");
-          $(".join-svg").css("fill", "white");
-        }
-      });
-    });
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 3674 ||
+    document.documentElement.scrollTop > 3674
+  ) {
+    document.getElementById("bg").style.background = "#fff";
+    document.getElementById("bg-h2").style.color = "#000";
+    document.getElementById("bg-title").style.color = "#000";
+    document.getElementById("bg-a").style.color = "#000";
+    document.getElementById("bg-svg").style.fill = "#000";
+    document.getElementById("bg-svg2").style.fill = "#000";
+  } else {
+    document.getElementById("bg").style.background = "#1a1a1a";
+    document.getElementById("bg-h2").style.color = "#fff";
+    document.getElementById("bg-title").style.color = "#fff";
+    document.getElementById("bg-a").style.color = "#fff";
+    document.getElementById("bg-svg").style.fill = "#fff";
+    document.getElementById("bg-svg2").style.fill = "#fff";
   }
+}
+
+anime({
+  targets: ".nav-bar",
+  opacity: [0, 1],
+  delay: 300,
 });
